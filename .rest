@@ -1,0 +1,13 @@
+//createNotification
+POST http://localhost:3000/notifications
+Content-Type: application/json
+
+{
+    "recipientId": "teste",
+    "content": "teste",
+    "category":"teste"
+}
+
+###
+//listNotifications
+GET http://localhost:3000/notifications
