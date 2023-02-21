@@ -3,8 +3,8 @@ POST http://localhost:3000/notifications
 Content-Type: application/json
 
 {
-    "recipientId": "teste",
-    "content": "teste",
+    "recipientId": "64882518-7bfa-46ab-be36-f79a9678a201",
+    "content": "Nova notificação de teste",
     "category":"teste"
 }
 
