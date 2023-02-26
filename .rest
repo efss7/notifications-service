@@ -3,11 +3,28 @@ POST http://localhost:3000/notifications
 Content-Type: application/json
 
 {
-    "recipientId": "64882518-7bfa-46ab-be36-f79a9678a201",
+    "recipientId": "2b894a9c-c8f0-43cb-9ef8-7de0b70450ad",
     "content": "Nova notificação de teste",
     "category":"teste"
 }
 
 ###
-//listNotifications
-GET http://localhost:3000/notifications
+//cancelNotification
+PATCH http://localhost:3000/notifications/957afe86-571b-4e9a-94dd-234749e0c90d/cancel
+
+###
+
+//readNotification
+PATCH http://localhost:3000/notifications/cd7018ea-35cf-4ff6-b6de-a49e697f2b79/read
+
+###
+//unreadNotification
+PATCH http://localhost:3000/notifications/cd7018ea-35cf-4ff6-b6de-a49e697f2b79/unread
+###
+
+//countFromRecipient
+GET http://localhost:3000/notifications/count/from/2b894a9c-c8f0-43cb-9ef8-7de0b70450ad
+###
+//getFromRecipient
+GET http://localhost:3000/notifications/from/2b894a9c-c8f0-43cb-9ef8-7de0b70450ad
+Content-Type: application/json
